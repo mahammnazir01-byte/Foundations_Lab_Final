@@ -6,8 +6,7 @@
 ---
 
 ## 1. Executive Summary
-This report documents the successful setup of a professional cybersecurity 
-workbench, including Git integration and AI-assisted troubleshooting.
+This report documents the successful setup of a professional cybersecurity workbench, including Git integration and AI-assisted troubleshooting.
 
 ## 2. Technical Evidence
 * **IDE:** Visual Studio Code 2026
@@ -19,18 +18,35 @@ workbench, including Git integration and AI-assisted troubleshooting.
 ## 3. Security Foundations: Governance & Frameworks
 
 ### Core Frameworks
-* **CIA Triad:** A foundational security model consisting of **Confidentiality** (protecting data from unauthorized access), **Integrity** (ensuring data accuracy and preventing unauthorized modification), and **Availability** (ensuring reliable access to data for authorized users).
-* **AAA Framework:** A framework for controlling access to computer resources, consisting of **Authentication** (verifying who a user is), **Authorization** (determining what they are allowed to do), and **Accounting** (tracking what they actually did).
+* **CIA Triad:** A foundational security model consisting of **Confidentiality** (protecting data from unauthorized access), **Integrity** (ensuring data accuracy), and **Availability** (ensuring reliable access).
+* **AAA Framework:** A framework for access control consisting of **Authentication** (identity verification), **Authorization** (permission control), and **Accounting** (activity tracking).
 
 
 
 ### Governance & Roles
-Governance acts as the strategic "playbook" for an organization. It establishes the policies and compliance requirements that dictate how technical security controls are implemented. For cybersecurity professionals, governance transforms security from a series of random technical tasks into a structured role focused on risk management, accountability, and alignment with legal standards.
-
-**Citation:** * Whitman, M. E., & Mattord, H. J. (2021). *Principles of Information Security*. Cengage Learning.
+Governance acts as the strategic "playbook" for an organization, establishing policies that dictate how technical security controls are implemented. For cybersecurity professionals, it ensures that technical tasks align with risk management and legal standards.
 
 ---
 
-## 4. Reflection
+## 4. Lab Infrastructure & Virtualization Setup
 
-Governance is just as important as technical skill in cybersecurity because technical tools are only effective if they are guided by clear policies and strategic intent. While a technical skill might allow a person to configure a firewall, governance ensures that the firewall is configured to protect the specific assets most vital to the company's survival. Technical skills provide the "how," but governance provides the "why" and the "when." Without it, security efforts become disorganized and fail to meet regulatory or business needs. This material aligns most closely with the **GRC (Governance, Risk, and Compliance)** domain. This domain focuses on the frameworks, risk assessments, and legal oversight that ensure an organization stays secure and compliant within its industry.
+* **Hypervisor:** Software that creates and runs virtual machines by isolating the guest operating system from the physical hardware host.
+* **Virtual Machine (VM):** A software-based emulation of a physical computer running an independent OS and applications.
+* **Isolation:** The security principle of separating environments to ensure that threats in one VM cannot interact with or compromise the host or other VMs.
+
+
+
+### Virtualization and the CIA Triad
+Virtualization supports **Confidentiality** through strict isolation between virtual environments. It ensures **Integrity** via snapshots that allow a system to be restored to a clean state if tampered with. Finally, it maintains **Availability** by allowing virtualized resources to be quickly backed up or migrated during hardware failures.
+
+---
+
+## 5. Reflection
+
+Governance is just as important as technical skill in cybersecurity because technical tools are only effective when guided by strategic intent; while technical skills build the "walls," governance decides where they go and who has the keys. Isolation is fundamental when testing software or malware because it creates a "sandbox" that prevents malicious code from spreading to the host network. Virtualization supports secure experimentation by allowing professionals to execute high-risk files and reset the environment instantly using snapshots. This material aligns most closely with the **Cloud Security** and **GRC (Governance, Risk, and Compliance)** domains.
+
+---
+
+## 6. References
+
+Whitman, M. E., & Mattord, H. J. (2021). *Principles of information security* (7th ed.). Cengage Learning.
