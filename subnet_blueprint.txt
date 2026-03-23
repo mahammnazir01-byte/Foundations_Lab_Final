@@ -1,0 +1,11 @@
+Address:   10.50.50.150
+Netmask:   255.255.255.0 = 24
+Network:   10.50.50.0/24
+HostMin:   10.50.50.1
+HostMax:   10.50.50.254
+Broadcast: 10.50.50.255
+
+=== /27 Subnet Requirements ===
+Target IP: 10.50.50.150/27
+Network ID: 10.50.50.128
+Broadcast ID: 10.50.50.159
