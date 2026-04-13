@@ -1,0 +1,8 @@
+{
+  "operator": "NM",
+  "host_ip": "192.168.64.12",
+  "vm_sandbox_ip": "192.168.56.101",
+  "web_container_id": "c7f89aab84c5",
+  "isolation_test": "PASSED",
+  "persistence_verified": true
+}
